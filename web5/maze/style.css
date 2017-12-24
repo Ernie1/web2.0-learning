@@ -1,0 +1,120 @@
+﻿/*16340286，第20组，迷宫，css文件*/
+#whole {
+	height: 225px;
+	width: 400px;
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	border: 1px solid #c6a964;
+}
+#game {
+	position: absolute;
+	height: 225px;
+	width: 360px;
+}
+.w {
+	background-color: #eeeeee;
+}
+#w1 {
+	position: absolute;
+	height: 150px;
+	width: 120px;
+	border-right: 1px solid #c6a964;
+	border-bottom: 1px solid #c6a964;
+}
+#w2 {
+	position: absolute;
+	left: 119px;
+	height: 35px;
+	width: 162px;
+	border-bottom: 1px solid #c6a964;
+}
+#w3 {
+	position: absolute;
+	right: 0px;
+	height: 150px;
+	width: 120px;
+	border-left: 1px solid #c6a964;
+	border-bottom: 1px solid #c6a964;
+}
+#w4 {
+	position: absolute;
+	bottom: 0px;
+	height: 35px;
+	width: 161px;
+	border-top: 1px solid #c6a964;
+}
+#w5 {
+	position: absolute;
+	bottom: 0px;
+	left: 160px;
+	height: 150px;
+	width: 80px;
+	border-left: 1px solid #c6a964;
+	border-top: 1px solid #c6a964;
+	border-right: 1px solid #c6a964;
+}
+#w6 {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	height: 35px;
+	width: 159px;
+	border-top: 1px solid #c6a964;
+}
+.cursor {
+	cursor: pointer;
+}
+#start {
+	position: absolute;
+	top: 150px;
+	height: 40px;
+	width: 40px;
+	background-color: lightgreen;
+	cursor: pointer;
+}
+#end {
+	position: absolute;
+	top: 150px;
+	height: 40px;
+	width: 40px;
+	background-color: cornflowerblue;
+	right: 0px;
+}
+	.start p, .end p {
+		position: relative;
+		font-size: 20px;
+		text-align: center;
+		bottom: 13px;
+	}
+
+.info {
+	position: relative;
+	width: 400px;
+	height: 40px;
+	margin: 0 auto;
+	top: 100px;
+	text-align: center;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+.fadeout {
+	opacity: 1;
+}
+.lose{
+	background-color: red;
+}
+#illu{
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+	top: 100px;
+	text-align: center;
+	font-size: 14px;
+}
+#exp{
+	background-color: #eeeeee;
+	position: absolute;
+	width: 50px;
+	border: 1px solid #c6a964;
+}

@@ -1,0 +1,94 @@
+#container {
+	background-color: #eeeeee;
+	height: 333px;
+	width: 248px;
+	position: relative;
+	top: 10px;
+	margin: 0 auto;
+	border: 1px solid #c6a964;
+	box-shadow: 4px 2px 10px #cfcfcf;
+}
+
+.screen {
+	width: 240px;
+	height: 120px;
+	position: relative;
+	top: 4px;
+	left: 4px;
+	overflow: hidden;
+}
+
+	.screen textarea {
+		position: relative;
+		left: 2px;
+		top: 3px;
+		width: 250px;
+		background-color: #eeeeee;
+		text-align: right;
+		font-family: arial;
+		resize: none;
+		overflow-y: scroll;
+		border-style: none;
+		outline: none;
+	}
+
+#upScn {
+	height: 56px;
+	font-size: 15px;
+	color: gray;
+}
+
+#scn {
+	height: 45px;
+	font-size: 40px;
+	color: black;
+}
+
+.btns {
+	position: relative;
+	top: -8px;
+	left: 4px;
+}
+
+p {
+	margin-bottom: -10px;
+}
+
+.button {
+	width: 55px;
+	height: 35px;
+	border: none;
+	margin-left: 1px;
+	font-size: 20px;
+	outline: none;
+}
+
+.num {
+	font-weight: bold;
+	background-color: #fafbf9;
+}
+
+.op {
+	position: absolute;
+	font-size: 27px;
+	margin-left: 6px;
+}
+
+.button:hover {
+	background-color: #eeeeee;
+	border: 1px solid white;
+}
+
+.button:active {
+	background-color: #babbb9;
+}
+
+p {
+	line-height: 30px;
+}
+
+img {
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}

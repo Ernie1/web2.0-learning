@@ -1,0 +1,118 @@
+/*16340286，第20组，拼图，css文件*/
+body{
+	background-color: lightgray;
+}
+#major{
+	position: relative;
+	top: 30px;
+	height: 600px;
+	width: 480px;
+	margin: 0 auto;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#begin{
+	display: block;
+	position: relative;
+	top: 30px;
+	margin: 0 auto;
+	height: 45px;
+	width: 160px;
+	background-color: cornflowerblue;
+	color: white;
+	font-size: 23px;
+	text-align: center;
+	font-family: "微软雅黑";
+	border: none;
+	outline:none;
+	transition-duration: 0.5s;
+	box-shadow: 8px 8px 10px lightskyblue;
+}
+#begin:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#begin:active{
+	opacity: 0.4;
+}
+/*start of show hint*/
+.hint{
+	position: absolute;
+	right: 0;
+	font-size: 15px;
+	color: grey;
+}
+.hint input[type=checkbox]{
+	visibility: hidden;
+}
+.hint label{
+	position: absolute;
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	top: 0;
+	left: -80px;
+	background-color: grey;
+	border: 0.5px solid lightskyblue;
+	white-space: nowrap;
+}
+.hint label p{
+	position: relative;
+	top: -15px;
+	left: 25px;
+}
+.hint label:after{
+	position: absolute;
+	content: "";
+	opacity: 0.4;
+	width: 12px;
+	height: 12px;
+	top: 3px;
+	left: 3px;
+	background: lightskyblue;
+}
+.hint label:hover:after{
+	opacity: 0.6;
+}
+.hint input[type=checkbox]:checked + label{
+	color: cornflowerblue;
+}
+.hint input[type=checkbox]:checked + label:after{
+	opacity: 1;
+}
+/*end of show hint*/
+#game{
+	position: relative;
+	height: 480px;
+	width: 480px;
+}
+.full{
+	border: 2px solid lightgray;
+	background-image: url(../img/panda.jpg);
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+	-webkit-text-stroke: white 1px;
+	transition-duration: 0.5s;
+}
+.full:hover{
+	cursor: pointer;
+	z-index: 999;
+	/*transform: scale(1.04);*/
+}
+.blank{
+
+}
+.win{
+	background-image: url(../img/win.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#select{
+	position: absolute;
+	font-size: 15px;
+	bottom: 60px;
+	color: grey;
+}

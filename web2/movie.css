@@ -1,0 +1,106 @@
+body{
+	background-image: url(img/background.png);
+	font-size: 8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	position: relative;
+}
+#banner{
+	text-align: center;
+	background-image: url(img/bannerbackground.png);
+	background-repeat: repeat-x;
+	height: 50px;
+}
+h1{
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: Tahoma, Verdana, sans-serif;
+}
+#sidebar{
+	float: right;
+	width: 250px;
+	background-color: #A2B964;
+}
+#sidebar dl{
+	margin: 10px 10px;
+	font-size: 8pt;
+	font-family: Arial, sans-serif;
+}
+#sidebar dt{
+	font-weight: bold;
+	margin-top: 1em;
+}
+#overall{
+	width: 800px;
+	margin: auto;
+	border: 4px gray solid;
+	overflow: hidden;
+}
+#column{
+	float: left;
+	width: 550px;
+}
+#top{
+	background-image: url(https://courses.cs.washington.edu/courses/cse190m/09sp/homework/2/rottenbackground.png);
+	background-repeat: repeat-x;
+	height: 83px;
+}
+#top img{
+	vertical-align: bottom;
+}
+#t32{
+	font-size: 48pt;
+	color: red;
+	font-weight: bold;
+	/*vertical-align: 16%;*/
+}
+#t88{
+	font-size: 8pt;
+	color: white;
+	/*vertical-align: 90%;*/
+}
+#column1{
+	float: left;
+	width: 47%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#column2{
+	float: right;
+	width: 47%;
+	margin-right: 2%;
+}
+.quote{
+	border: 2px gray solid;
+	padding: 8px 8px;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: #E1D697;
+	overflow: hidden;
+}
+.quote img, .reviewer img{
+	float: left;
+	margin-right: 5px;
+}
+.publication{
+	font-style: italic;
+}
+.reviewer{
+	margin-bottom: 3em;
+}
+#bar{
+	float: left;
+	text-align: center;
+	background-color: #A2B964;
+	width: 800px;
+	margin: 0;
+	padding: 5px;
+}
+#w3{
+	border: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}

@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		title 用户详情
+		link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+	body.align
+		.grid
+			#login
+				h2#caption 用户详情
+				form
+					fieldset
+						p
+							label 用户名
+						p
+							input(type='text', name='username', value='#{user.username}', readonly='')
+						p
+							label 学号
+						p
+							input(type='text', name='stuId', value='#{user.stuId}', readonly='')
+						p
+							label 手机
+						p
+							input(type='text', name='phone', value='#{user.phone}', readonly='')
+						p
+							label 邮箱
+						p
+							input(type='text', name='email', value='#{user.email}', readonly='')
+						p
+							lable.error #{error.up}
+							span#logoutButton
+								a(href='/logout')
+									strong 退出登录

@@ -1,0 +1,164 @@
+﻿/*16340286，第20组，ring menu，css文件*/
+body{
+	position: fixed;
+	width:100%;
+	height: 100%;
+}
+#at-plus-container{
+	position: absolute;
+	bottom: 430px;
+	left: 40%;
+}
+#bottom-positioner{
+	position: absolute;
+	width: 190px;
+	height: 430px;
+}
+ul{
+	list-style-type: none;
+}
+.apb{
+	display: inline-block;
+	position: absolute;
+	background-color: rgba(48, 63, 159, 0.5);
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	transition: 0.2s ease-out 400ms;
+	left: 92px;
+	bottom: 90px;
+}
+.icon{
+	background-image: url("assets/images/atplus_white.png");
+	height: 20px;
+	width: 28px;
+	margin: 10px 6px;
+	background-size: 100% 100%;
+	transition: 0.2s ease-out 200ms;
+}
+#bottom-positioner:hover .apb{
+	background-color: rgba(48, 63, 159, 1);
+	transform: scale(1.5);
+	transition: 0.2s ease-out;
+}
+#button:hover .icon{
+	background-image: url("assets/images/atplus_green.png");
+	transition: 0.2s ease-out;
+}
+#control-ring-container{
+	position: absolute;
+}
+#control-ring li{
+	transition: 0.2s ease-out 200ms;
+	position: absolute;
+}
+#button:hover #control-ring li{
+	transition: 0.2s ease-out;
+}
+.mask{
+	transform: translateX(52px) translateY(284px);
+	opacity: 0;
+}
+#button:hover .mask{
+	background-repeat: no-repeat;
+	transform: translateX(-18px) translateY(245px);
+	opacity: 1;
+}
+.history{	
+	transform: translateX(51px) translateY(284px);
+	opacity: 0;
+}
+#button:hover .history{
+	background-repeat: no-repeat;
+	transform: translateX(-29px) translateY(290px);
+	opacity: 1;
+}
+.message{
+	transform: translateX(51px) translateY(283px);
+	opacity: 0;
+}
+#button:hover .message{
+	background-repeat: no-repeat;
+	transform: translateX(-10px) translateY(333px);
+	opacity: 1;
+}
+.unread{
+	position: absolute;
+	text-align: center;
+	display: block;
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #FF3A31;
+	width: 20px;
+	height: 20px;
+	border-radius: 50% 50% 50% 50%;
+	margin-left: 28px;
+	top: -8px;
+}
+.setting{
+	transform: translateX(52px) translateY(284px);
+	opacity: 0;
+}
+#button:hover .setting{
+	background-repeat: no-repeat;
+	transform: translateX(31px) translateY(360px);
+	opacity: 1;
+}
+.sign{
+	transform: translateX(52px) translateY(284px);
+	opacity: 0;
+}
+#button:hover .sign{
+	background-repeat: no-repeat;
+	transform: translateX(80px) translateY(354px);
+	opacity: 1;
+}
+#button:hover .button{
+	color: #40E0A4;
+}
+.button{
+	display:inline-block;
+	width: 40px;
+	height: 40px;
+	color: white;
+	font-size: 27px;
+	border-radius: 50% 50% 50% 50%;
+	background-color: rgba(48, 63, 159, 1);
+}
+#info-bar{
+	position: absolute;
+	border-radius: 50%;
+	height: 0px;
+	width: 0px;
+	transition: 0.2s ease-out 200ms;
+	transform: translateX(110px) translateY(325px);
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+#button:hover #info-bar{
+	transform: translateX(39px) translateY(132px);
+	height: 150px;
+	width: 150px;
+	transition: 0.2s ease-out;
+}
+.info li{
+	position: absolute;
+}
+.info span{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.comment{
+	font-size: 40px;
+	color: #40E0A4;
+	top: 50px;
+	left: 50px;
+}
+.comment span{
+	position: absolute;
+	top: 6px;
+}
+.grey{
+	background-color: rgba(48, 63, 159, 0.5);
+}

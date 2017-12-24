@@ -1,0 +1,217 @@
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+/*@import url(http://weloveiconfonts.com/api/?family=fontawesome);*/
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- https://meyerweb.com/eric/tools/css/reset/ ---------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+	font-family: 'FontAwesome', sans-serif;
+}
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+input {
+	border: none;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+
+/* ---------- ALIGN ---------- */
+
+.align {
+	position: relative;
+	top: 100px;
+	color: #000;
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	min-height: 100%;
+}
+
+
+/* ---------- GRID ---------- */
+
+.grid {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+	width: 400px;
+}
+
+
+/* ---------- LOGIN ---------- */
+
+h2 {
+	background: #f95252;
+	border-radius: 20px 20px 0 0;
+	color: #fff;
+	font-size: 28px;
+	padding: 20px 26px;
+}
+
+h2 span[class*="fontawesome-"] {
+	margin-right: 14px;
+}
+
+#signin h2{
+	background: #ff8540;
+}
+
+#login #caption {
+	background: #33cc77;
+}
+
+fieldset {
+	background: #fff;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+fieldset p {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+fieldset input {
+	border-radius: 3px;
+}
+
+fieldset input[type="text"], fieldset input[type="password"] {
+	background: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 100%;
+}
+
+fieldset input[type="submit"] {
+	background: #33cc77;
+	color: #fff;
+	padding: 4px 0;
+	width: 100px;
+}
+
+fieldset input[type="submit"]:hover {
+	background: #28ad63;
+}
+
+fieldset input[type="reset"] {
+	background: rgb(254, 67, 101);
+	color: #fff;
+	padding: 4px 0;
+	width: 100px;
+	margin-right: 30px;
+}
+
+#button {
+	width: 230px;
+	margin: 0 auto;
+}
+
+fieldset input[type="reset"]:hover {
+	background: rgb(220, 67, 101);
+}
+
+body {
+	background: #c0c0c0;
+}
+
+#login fieldset input[type="text"]:required:valid {
+	background: #fff url(../images/right.png) no-repeat 99% center;
+	box-shadow: 0 0 10px #5cd053;
+	border-color: #28921f;
+}
+
+.error {
+	color: red;
+}
+
+.isValid {
+	background: #fff url(../images/right.png) no-repeat 99% center !important;
+	box-shadow: 0 0 10px #5cd053;
+	border-color: #28921f;
+}
+
+#button {
+	clear: both;	//防止被前面元素浮动所影响
+	margin-top: 5px;
+}
+
+#signupButton, #logoutButton, #signinButton {
+	float: right;
+	height: 40px;
+}
+
+#signupButton a {
+	color: #ff8540;
+}
+
+#logoutButton a {
+	color: #33cc77;
+}
+
+#signinButton a {
+	color: #f95252;
+}

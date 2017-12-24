@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Sign Up</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="validate.js"></script>
+	</head>
+
+	<body>
+		<div class="align">
+			<div class="grid">
+				<div id="login">
+					<h2><span class="fontawesome-lock"></span>注册</h2>
+					<form method="POST" autocomplete="off">
+						<fieldset>
+							<p><label>用户名</label>
+								<lable class="error">{{up}}</lable>
+							</p>
+							<p><input type="text" name="username" required="required" pattern="^[a-zA-Z][a-zA-Z0-9_]{5,17}$" title="6~18位英文字母、数字或下划线，必须以英文字母开头" value={{username}}></p>
+							<p><label>学号</label>
+								<lable class="error">{{sp}}</lable>
+							</p>
+							<p><input type="text" name="stuId" required="required" pattern="^[1-9][0-9]{7}$" title="8位数字，不能以0开头" value={{stuId}}></p>
+							<p><label>手机</label>
+								<lable class="error">{{pp}}</lable>
+							</p>
+							<p><input type="text" name="phone" required="required" pattern="^[1-9][0-9]{10}$" title="11位数字，不能以0开头" value={{phone}}></p>
+							<p><label>邮箱</label>
+								<lable class="error">{{ep}}</lable>
+							</p>
+							<p><input type="text" name="email" required="required" pattern="^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$" title="请输入正确的邮箱" value={{email}}></p>
+							<div id="button">
+								<input type="reset" id="reset" value="重置"><input type="submit" value="提交">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

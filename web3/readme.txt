@@ -1,0 +1,3 @@
+advanced版本视觉效果流畅，仅兼容webkit内核浏览器，兼容Firefox时通不过css校验，故不兼容Firefox，视觉速度快。
+
+compatible版本兼容ie，返璞归真，视觉速度慢。

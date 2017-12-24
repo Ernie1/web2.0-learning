@@ -1,0 +1,53 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		title 注册
+		link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+		script(src='/javascripts/jquery-3.2.1.min.js')
+		script(src='/javascripts/view.js')
+	body
+		.align
+			.grid
+				#login
+					h2
+						span.fontawesome-lock
+						| 注册
+					form#signupForm(method='POST')
+						fieldset
+							p
+								label 用户名
+								lable.error #{error.up}
+							p
+								input(type='text', name='username', required='required', pattern='^[a-zA-Z][a-zA-Z0-9_]{5,17}$', title='6~18位英文字母、数字或下划线，必须以英文字母开头', value=user.username)
+							p
+								label 密码
+								lable.error #{error.pap}
+							p
+								input#password(type='password', name='password', required='required', pattern='^[a-zA-Z0-9-_]{6,12}$', title='密码为6~12位数字、大小写字母、中划线、下划线')
+							p
+								label 确认密码
+							p
+								input#confirmPassword(type='password', required='required', pattern='^[a-zA-Z0-9-_]{6,12}$')
+							p
+								label 学号
+								lable.error #{error.sp}
+							p
+								input(type='text', name='stuId', required='required', pattern='^[1-9][0-9]{7}$', title='8位数字，不能以0开头', value=user.stuId)
+							p
+								label 手机
+								lable.error #{error.pp}
+							p
+								input(type='text', name='phone', required='required', pattern='^[1-9][0-9]{10}$', title='11位数字，不能以0开头', value=user.phone)
+							p
+								label 邮箱
+								lable.error #{error.ep}
+							p
+								input(type='text', name='email', required='required', pattern='^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(.[a-zA-Z0-9_-]+)+$', title='请输入正确的邮箱', value=user.email)
+							p
+								span#signinButton
+									a(href='/signin')
+										strong 已有账号？登录
+							#button
+								input#reset(type='reset', value='重置')
+								input(type='submit', value='提交')

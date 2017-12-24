@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		title 登录
+		link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+		script(src='/javascripts/jquery-3.2.1.min.js')
+		script(src='/javascripts/signin.js')
+	body
+		.align
+			.grid
+				#signin
+					h2
+						span.fontawesome-lock
+						| 登录
+					form(method='POST')
+						fieldset
+							p
+								label 用户名
+							p
+								input(type='text', name='username', required='required', value=user.username)
+							p
+								label 密码
+							p
+								input#password(type='password', name='password', required='required', value=user.password)
+							p
+								lable.error #{error.up}
+								span#signupButton
+									a(href='/regist')
+										strong 立即注册
+							#button
+								input#reset(type='reset', value='重置')
+								input(type='submit', value='登录')
